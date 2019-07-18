@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <drawable name="dkgray">#80808FF0</drawable>
+    <color name="white">#FFFFFF</color>
+    <drawable name="darkgray">#938192</drawable>
+    <drawable name="blue">#ff0000ff</drawable>
+    <drawable name="ltgray">#D3D3D3</drawable>
+    <color name="cyan">#66FFE6</color>
+</resources>
