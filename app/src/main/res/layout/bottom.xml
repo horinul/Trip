@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/LL1">
+
+        <ImageView
+            android:id="@+id/IM1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="56dp"
+            android:background="@drawable/place" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附近"
+            android:textSize="14dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/TV1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LL2">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/photo"
+            android:layout_marginLeft="67dp"
+            android:id="@+id/IM2"/>
+
+        <TextView
+            android:id="@+id/TV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:textSize="14dp"
+            android:text="发现" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL3"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/IM3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/person" />
+
+        <TextView
+            android:id="@+id/TV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="67dp"
+            android:textSize="14dp"
+            android:text="个人中心" />
+    </LinearLayout>
+</LinearLayout>

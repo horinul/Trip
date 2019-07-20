@@ -36,7 +36,7 @@ public class land extends AppCompatActivity {
                 String name = nameinput.getText().toString();
                 String ps = psinput.getText().toString();
                 if (name.equals("admin") && ps.equals("123456")) {
-                    Intent intent = new Intent(land.this, basic.class);
+                    Intent intent = new Intent(land.this, main.class);
                     Toast.makeText(land.this, "登陆成功", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 } else Toast.makeText(land.this, "您的账号或密码有误，请重新输入", Toast.LENGTH_SHORT).show();

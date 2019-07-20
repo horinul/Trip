@@ -33,12 +33,14 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.travel.basic" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.travel.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
+        <activity android:name="com.example.travel.basic" >
+        </activity>
+        <activity android:name="com.example.travel.main" >
+        </activity>
+        <activity android:name="com.example.travel.Message" >
+        </activity>
+        <activity android:name="com.example.travel.Set" >
+        </activity>
     </application>
 
 </manifest>
