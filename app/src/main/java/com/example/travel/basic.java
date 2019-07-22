@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.os.Build;
+import android.widget.ImageView;
 
 public class basic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,20 @@ public class basic extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(basic.this,Message.class);
                 startActivity(intent);
+            }
+        });
+        ImageView imageView1=(ImageView) findViewById(R.id.imageView);
+        imageView1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent1=new Intent(basic.this,Set.class);
+                startActivity(intent1);
+            }
+        });
+        ImageView imageView3=(ImageView) findViewById(R.id.imageView3);
+        imageView3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent1=new Intent(basic.this,main.class);
+                startActivity(intent1);
             }
         });
     }

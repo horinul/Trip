@@ -41,6 +41,13 @@
         </activity>
         <activity android:name="com.example.travel.Set" >
         </activity>
+        <activity android:name="com.example.travel.Place" >
+        </activity>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.travel.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

@@ -28,6 +28,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_marginTop="260dp"
         android:hint="              手机号"
         android:textColor="@color/white"
+        android:maxLines="1"
         android:textColorHint="@color/white"
         android:theme="@style/MyEditText" />
 
@@ -38,6 +39,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_marginLeft="120dp"
         android:layout_marginTop="320dp"
         android:hint="                密码"
+        android:maxLines="1"
         android:theme="@style/MyEditText"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />

@@ -6,9 +6,9 @@
     android:layout_height="match_parent">
 
     <View
-        android:layout_width="501dp"
-        android:layout_height="130dp"
-        android:layout_marginBottom="80dp"
+        android:layout_width="487dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="52dp"
         android:background="#48D1CC"
         app:layout_constraintBottom_toTopOf="@+id/icon_iamge"
         app:layout_constraintStart_toStartOf="parent">
@@ -17,14 +17,15 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="470dp"
-        android:layout_height="142dp"
-        android:layout_marginTop="680dp"
+        android:layout_width="481dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="656dp"
         android:background="#48D1CC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </View>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="133dp"
@@ -40,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/icon_iamge"
@@ -57,20 +58,70 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.222" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/message"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="37dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/foot"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="21dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/to"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="21dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/to"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="300dp"
         android:layout_height="78dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="456dp"
+        android:layout_marginTop="396dp"
         android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:gravity="center|left"
         android:text="                  个人信息"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -88,7 +139,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/textView12"
@@ -96,7 +147,7 @@
         android:layout_height="23dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="32dp"
         android:gravity="center"
         android:text="热爱旅行，一直在路上"
         android:textSize="13dp"
@@ -120,7 +171,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icon_iamge"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintVertical_bias="0.038" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -136,7 +187,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/img4" />
 
     <ImageView
@@ -144,12 +195,11 @@
         android:layout_width="35dp"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:alpha="0.8"
         app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />

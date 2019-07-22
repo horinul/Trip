@@ -1,91 +1,71 @@
 package com.example.travel;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.view.View.OnClickListener;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
-public class main  extends AppCompatActivity  implements OnClickListener,OnPageChangeListener {
-    private List<View> list;
-
-
-    private LinearLayout LL1;
-    private LinearLayout LL2;
-    private LinearLayout LL3;
-
-    private TextView TV1;
-    private TextView TV2;
-    private TextView TV3;
-
-    private ContentAdapter contentAdapter;
-
-    private List<View> views;
-
-    private ViewPager viewPager;
-
+public class main  extends AppCompatActivity {
+    private LinearLayout LL;
+    private Card[] card={new Card("111",R.drawable.card1),new Card("222",R.drawable.card2),new Card("333",R.drawable.card3)};
+    private List<Card> cardList=new ArrayList<>();
+    private mainAdapter adapter;
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         setContentView(R.layout.main);
-    }
-    private void initEvent(){
-        LL1.setOnClickListener(this);
-        LL2.setOnClickListener(this);
-        LL3.setOnClickListener(this);
-
-        viewPager.setOnPageChangeListener(this);
-    }
-    private void initView(){
-        LL1=(LinearLayout) findViewById(R.id.LL1);
-        LL2=(LinearLayout) findViewById(R.id.LL2);
-        LL3=(LinearLayout) findViewById(R.id.LL3);
-
-        TV1=(TextView) findViewById(R.id.TV1);
-        TV2=(TextView) findViewById(R.id.TV2);
-        TV3=(TextView) findViewById(R.id.TV3);
-
-        viewPager=(ViewPager) findViewById(R.id.viewpager);
-
-        View place=View.inflate(main.this,R.layout.place,null);
-        View main=View.inflate(main.this,R.layout.center_main,null);
-        View message=View.inflate(main.this,R.layout.message,null);
-
-        views=new ArrayList<View>();
-        views.add(place);
-        views.add(main);
-        views.add(message);
-
-        contentAdapter=new ContentAdapter(views);
-        viewPager.setAdapter(contentAdapter);
-    }
-    public void onClick(View v){
-        switch (v.getId()){
-            case R.id.LL1:
-                viewPager.setCurrentItem(0);
-            case R.id.LL2:
-                viewPager.setCurrentItem(1);
-            case  R.id.LL3:
-                viewPager.setCurrentItem(2);
-                default:
-                    break;
+        if(Build.VERSION.SDK_INT>=21){
+            View decorView=getWindow().getDecorView();
+            int option=View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+            decorView.setSystemUiVisibility(option);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
-    }
-
-    public void onPageScrollStateChanged(int arg0) {
-
-    }
-
-    @Override
-    public void onPageScrolled(int arg0, float arg1, int arg2) {
-
-    }
-    public void onPageSelected(int arg0) {
-
+        ActionBar actionbar=getSupportActionBar();
+        actionbar.hide();
+        LinearLayout LL1=(LinearLayout) findViewById(R.id.LL1);
+        LL1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(main.this,Place.class);
+                startActivity(intent1);
+            }
+        });
+        LinearLayout LL3=(LinearLayout) findViewById(R.id.LL3);
+        LL3.setOnClickListener(new View.OnClickListener(){
+        public void onClick(View v){
+            Intent intent3=new Intent(main.this,basic.class);
+            startActivity(intent3);
         }
+    });;
+
+        RecyclerView recyclerView=(RecyclerView) findViewById(R.id.recycler);
+        GridLayoutManager gridLayoutManager=new GridLayoutManager(this,1);
+        recyclerView.setLayoutManager(gridLayoutManager);
+        adapter=new mainAdapter(cardList);
+        recyclerView.setAdapter(adapter);
+        init();
     }
+private void init(){
+        cardList.clear();
+        for(int i=0;i<20;i++){
+            Random random=new Random();
+            int index=random.nextInt(card.length);
+            cardList.add(card[index]);
+        }
+}
+
+
+}
 

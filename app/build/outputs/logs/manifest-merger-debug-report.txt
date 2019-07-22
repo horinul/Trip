@@ -1,11 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\1177ed6a8c6e5c5671b0e6414eaa7e3e\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\e930438fa3f83b17543bebb1038df6e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2cc7e27e0b3f1303356f7a4df469c442\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\33b2c25b70e1e2bf5428574e8cf38782\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\d551e3128c37433ba46841d3957d92c9\AndroidManifest.xml:17:1-22:12
@@ -28,29 +30,29 @@ MERGED from [com.android.support:documentfile:28.0.0] C:\Users\fanji\.gradle\cac
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\68c3fbca4be5a6efc5a1ac76a12b2371\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\da64015a35d568cd01fa64119d101b5e\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\0626039ac409512109e8b8d8cba726f6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\508fd7e53f54480c73b6a485d4b45ece\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2147abaca25e840b8659bbfab3d196ff\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\a24ff92e5dd982b4731e25d3b2f365da\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\9a5109c5f9746f8d37ad4bf11b0cbb74\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\508fd7e53f54480c73b6a485d4b45ece\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:5:5-34:19
+ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:5:5-36:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:9:5-20
@@ -117,6 +119,10 @@ activity#com.example.travel.Set
 ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:32:9-33:20
 	android:name
 		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:32:19-38
+activity#com.example.travel.Place
+ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:34:9-35:20
+	android:name
+		ADDED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml:34:19-40
 uses-sdk
 INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
@@ -125,6 +131,10 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\fanji\.gradle\cac
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\1177ed6a8c6e5c5671b0e6414eaa7e3e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\e930438fa3f83b17543bebb1038df6e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\e930438fa3f83b17543bebb1038df6e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2cc7e27e0b3f1303356f7a4df469c442\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2cc7e27e0b3f1303356f7a4df469c442\AndroidManifest.xml:20:5-44
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\33b2c25b70e1e2bf5428574e8cf38782\AndroidManifest.xml:20:5-44
@@ -169,14 +179,14 @@ MERGED from [com.android.support:print:28.0.0] C:\Users\fanji\.gradle\caches\tra
 MERGED from [com.android.support:print:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\da64015a35d568cd01fa64119d101b5e\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\0626039ac409512109e8b8d8cba726f6\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\0626039ac409512109e8b8d8cba726f6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\508fd7e53f54480c73b6a485d4b45ece\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\508fd7e53f54480c73b6a485d4b45ece\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2147abaca25e840b8659bbfab3d196ff\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2147abaca25e840b8659bbfab3d196ff\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\a24ff92e5dd982b4731e25d3b2f365da\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\a24ff92e5dd982b4731e25d3b2f365da\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\9a5109c5f9746f8d37ad4bf11b0cbb74\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\9a5109c5f9746f8d37ad4bf11b0cbb74\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\508fd7e53f54480c73b6a485d4b45ece\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\508fd7e53f54480c73b6a485d4b45ece\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\fanji\tour\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion

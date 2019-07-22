@@ -32,7 +32,16 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.travel.basic" />
+        <activity android:name="com.example.travel.basic" >
+        </activity>
+        <activity android:name="com.example.travel.main" >
+        </activity>
+        <activity android:name="com.example.travel.Message" >
+        </activity>
+        <activity android:name="com.example.travel.Set" >
+        </activity>
+        <activity android:name="com.example.travel.Place" >
+        </activity>
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

@@ -1,4 +1,4 @@
-#Fri Jul 19 14:05:35 CST 2019
+#Mon Jul 22 10:42:12 CST 2019
 base.0=C\:\\Users\\fanji\\tour\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.0=classes.dex
 renamed.0=classes.dex
