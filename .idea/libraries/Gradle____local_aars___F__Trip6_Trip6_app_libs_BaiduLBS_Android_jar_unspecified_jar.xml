@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: __local_aars__:F.\Trip6\Trip6\app\libs\BaiduLBS_Android.jar:unspecified@jar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/BaiduLBS_Android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trip6/app/libs/BaiduLBS_Android.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
