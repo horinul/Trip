@@ -1,6 +1,7 @@
 package com.example.travel;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -35,7 +36,19 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder>{
             mcontext=parent.getContext();
         }
         View view= LayoutInflater.from(mcontext).inflate(R.layout.recyclerview,parent,false);
-        return new ViewHolder(view);
+       final ViewHolder holder=new ViewHolder(view);
+       holder.cardView.setOnClickListener(new View.OnClickListener(){
+           @Override
+           public void onClick(View v){
+               int position=holder.getAdapterPosition();
+               Card card=mcardList.get(position);
+               Intent intent=new Intent(mcontext,SceneryActivity.class);
+               intent.putExtra(SceneryActivity.SCENERY_NAME,card.getIntroduce());
+               intent.putExtra(SceneryActivity.SCENERY_IMAGE_ID,card.getImageID());
+               mcontext.startActivity(intent);
+           }
+       });
+       return holder;
     }
     public void onBindViewHolder(ViewHolder holder,int position){
         Card card=mcardList.get(position);

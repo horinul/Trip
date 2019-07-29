@@ -18,12 +18,13 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="414dp"
-        android:layout_height="121dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:background="#48D1CC"
         app:layout_constraintBottom_toTopOf="@+id/icon_iamge"
         app:layout_constraintEnd_toEndOf="parent"></View>
+
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"

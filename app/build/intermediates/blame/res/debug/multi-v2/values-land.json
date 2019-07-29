@@ -1,16 +1,35 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\fanji\\tour\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "F:\\Trip6\\Trip6\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fanji\\.gradle\\caches\\transforms-2\\files-2.1\\1177ed6a8c6e5c5671b0e6414eaa7e3e\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\ASU\\.gradle\\caches\\transforms-2\\files-2.1\\ac7e01197a521e076e630f91445c84ca\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
                         "startOffsets": "55,125,196",
                         "endColumns": "69,70,67",
                         "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASU\\.gradle\\caches\\transforms-2\\files-2.1\\3df68254ac24e982d0efbc131ac28a14\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
                     }
                 }
             ]

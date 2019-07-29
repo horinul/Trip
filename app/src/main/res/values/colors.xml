@@ -9,4 +9,5 @@
     <drawable name="blue">#ff0000ff</drawable>
     <drawable name="ltgray">#D3D3D3</drawable>
     <color name="cyan">#66FFE6</color>
+    <color name="view">#48D1CC</color>
 </resources>

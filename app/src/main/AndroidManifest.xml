@@ -2,6 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.travel">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,30 +20,39 @@
         android:roundIcon="@mipmap/ic_tour"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CustomCamera"></activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Ga23onql10GGVVA3Q3AUCIW8sDnYUZdm" />
+
+        <activity
+            android:name=".SceneryActivity"
+            android:label="@string/title_activity_scenery"
+            android:theme="@style/SceneryActivityTheme" />
         <activity android:name=".start">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".land">
-        </activity>
+        <activity android:name=".land" />
         <activity android:name=".register">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".basic">
-        </activity>
-        <activity android:name=".main">
-        </activity>
-        <activity android:name=".Message">
-        </activity>
-        <activity android:name=".Set">
-        </activity>
-        <activity android:name=".Place">
-        </activity>
+        <activity android:name=".basic" />
+        <activity android:name=".main" />
+        <activity android:name=".Message" />
+        <activity android:name=".Set"></activity>
+        <activity android:name=".Place" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
     </application>
 
 </manifest>
