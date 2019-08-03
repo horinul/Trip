@@ -1,21 +1,62 @@
 package com.example.travel;
 
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.hardware.Camera;
 import android.os.Build;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextPaint;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Random;
+
+import master.flame.danmaku.controller.DrawHandler;
+import master.flame.danmaku.controller.IDanmakuView;
+import master.flame.danmaku.danmaku.model.BaseDanmaku;
+import master.flame.danmaku.danmaku.model.DanmakuTimer;
+import master.flame.danmaku.danmaku.model.IDanmakus;
+import master.flame.danmaku.danmaku.model.SpecialDanmaku;
+import master.flame.danmaku.danmaku.model.android.DanmakuContext;
+import master.flame.danmaku.danmaku.model.android.Danmakus;
+import master.flame.danmaku.danmaku.model.android.SimpleTextCacheStuffer;
+import master.flame.danmaku.danmaku.parser.BaseDanmakuParser;
+import master.flame.danmaku.ui.widget.DanmakuView;
 
 public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Callback{
     private Camera mCamera;
+    private boolean showDanmaku;
     private SurfaceView mPreview;
     private SurfaceHolder mHolder;
+    private DanmakuView danmakuView;
+    private DanmakuContext danmakuContext;
+    private EditText editText;
+    private Button button;
+    private Button button1;
+    private SimpleTextCacheStuffer simpleTextCacheStuffer;
+    private Canvas canvas;
+    private TextPaint textPaint;
+    private IDanmakuView iDanmakuView;
+
+    //弹幕解析器
+    private BaseDanmakuParser parser=new BaseDanmakuParser() {
+        @Override
+        protected IDanmakus parse() {
+            return new Danmakus();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,11 +68,152 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
         }
         ActionBar actionbar=getSupportActionBar();
         actionbar.hide();
+
+
         setContentView(R.layout.custom_camera);
         mPreview=findViewById(R.id.preview);
+
+
+        //发送弹幕
+        button=(Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String text=editText.getText().toString();
+                addDanmaku(text,true);
+                editText.setText("");
+
+            }
+        });
+
+
+        //清空弹幕
+        button1=(Button) findViewById(R.id.clear);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                removeAllDanmaku(true);
+            }
+        });
+        editText=(EditText) findViewById(R.id.edittext);
+
+
         mHolder=mPreview.getHolder();
         mHolder.addCallback(this);
+
+
+        danmakuView=(DanmakuView) findViewById(R.id.danmaku);
+        //提升弹幕绘制效率
+        danmakuView.enableDanmakuDrawingCache(true);
+        danmakuView.setCallback(new DrawHandler.Callback() {
+            @Override
+            public void prepared() {
+                showDanmaku = true;
+                danmakuView.start();
+              //  generateSomeDanmaku();
+            }
+
+            @Override
+            public void updateTimer(DanmakuTimer timer) {
+
+            }
+
+            @Override
+            public void danmakuShown(BaseDanmaku danmaku) {
+
+            }
+
+            @Override
+            public void drawingFinished() {
+
+            }
+        });
+        iDanmakuView.setOnDanmakuClickListener(new IDanmakuView.OnDanmakuClickListener() {
+            @Override
+            public boolean onDanmakuClick(IDanmakus danmakus) {
+                Toast.makeText(CustomCamera.this,"00",Toast.LENGTH_SHORT).show();
+                return true;
+            }
+
+            @Override
+            public boolean onViewClick(IDanmakuView view) {
+                return false;
+            }
+        });
+
+
+        danmakuContext=DanmakuContext.create();
+        //控制速度
+        danmakuContext.setScrollSpeedFactor(5);
+        danmakuView.prepare(parser,danmakuContext);
+        //控制行数
+        HashMap<Integer,Integer> maxLines=new HashMap<>();
+        maxLines.put(BaseDanmaku.TYPE_SCROLL_RL,5);
+        //控制是否重叠
+        HashMap<Integer,Boolean> enable=new HashMap<>();
+        enable.put(BaseDanmaku.TYPE_SCROLL_RL,true);
+        enable.put(BaseDanmaku.TYPE_FIX_TOP,true);
     }
+
+    //增加一条弹幕
+private void addDanmaku(String content,Boolean withBorder){
+        BaseDanmaku danmaku=danmakuContext.mDanmakuFactory.createDanmaku(BaseDanmaku.TYPE_SCROLL_RL);
+        danmaku.text=content;
+        danmaku.padding=5;
+        danmaku.textSize=50;
+        danmaku.setTime(danmakuView.getCurrentTime());
+        AlphaAnimation alphaAnimation1 = new AlphaAnimation(0.0f, 1.0f);
+        alphaAnimation1.setDuration(3000);//多长时间完成这个动作
+        danmakuView.startAnimation(alphaAnimation1);
+        AlphaAnimation alphaAnimation2 = new AlphaAnimation(1.0f, 0.0f);
+        alphaAnimation2.setDuration(8000);
+        danmakuView.startAnimation(alphaAnimation2);
+        alphaAnimation2.setAnimationListener(new Animation.AnimationListener() {
+        @Override
+        public void onAnimationStart(Animation animation) {
+
+        }
+
+        @Override
+        public void onAnimationEnd(Animation animation) {
+            danmakuView.setVisibility(View.GONE);
+        }
+
+        @Override
+        public void onAnimationRepeat(Animation animation) {
+
+        }
+    });
+//控制输入弹幕框的颜色
+    if(withBorder){
+            danmaku.borderColor=Color.BLUE;
+        }
+        danmakuView.addDanmaku(danmaku);
+}
+//一键清空弹幕
+    private void removeAllDanmaku(boolean isClearAllDanmakuOnScreen){
+        if(danmakuView!=null){
+            danmakuView.removeAllDanmakus(true);
+        }
+    }
+//随机生成弹幕
+ /*   private void generateSomeDanmaku(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (showDanmaku){
+                    int time=new Random().nextInt(300);
+                    String content=""+time+time;
+                    addDanmaku(content,false);
+                    try{
+                        Thread.sleep(time);
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
+    }*/
 
     /**
      * 获取Camera对象
@@ -78,6 +260,9 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
     protected void onPause() {
         super.onPause();
         releaseCamera();
+        if (danmakuView!=null&&danmakuView.isPrepared()){
+            danmakuView.pause();
+        }
     }
 
     @Override
@@ -88,6 +273,18 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
             if(mHolder==null){
                 setStartPreview(mCamera,mHolder);
             }
+        }
+        if(danmakuView!=null&&danmakuView.isPrepared()&&danmakuView.isPaused()){
+            danmakuView.resume();
+        }
+    }
+
+    protected void onDestory(){
+        super.onDestroy();
+        showDanmaku=false;
+        if(danmakuView!=null){
+            danmakuView.release();
+            danmakuView=null;
         }
     }
 

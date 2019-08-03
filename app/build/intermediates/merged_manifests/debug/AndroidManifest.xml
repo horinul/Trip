@@ -62,6 +62,10 @@
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote" />
+
+        <activity android:name="com.example.travel.Navigation" />
+        <activity android:name="com.example.travel.AllPlace" />
+        <activity android:name="com.example.travel.History" />
     </application>
 
 </manifest>

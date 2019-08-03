@@ -8,16 +8,17 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -59,6 +60,8 @@ public class main  extends AppCompatActivity {
                 }
             }
         });
+
+
         LinearLayout LL3=(LinearLayout) findViewById(R.id.LL3);
         LL3.setOnClickListener(new View.OnClickListener(){
         public void onClick(View v){
@@ -73,8 +76,8 @@ public class main  extends AppCompatActivity {
         adapter=new mainAdapter(cardList);
         recyclerView.setAdapter(adapter);
         init();
+        spinner();
     }
-
     private void camera(){
         Intent intent= null;
         try {
@@ -95,10 +98,33 @@ public class main  extends AppCompatActivity {
                     Toast.makeText(this,"You denied the permission",Toast.LENGTH_SHORT).show();
                 }
                 break;
-                default:
+            default:
         }
     }
+    public void spinner(){
+        Spinner spinner=(Spinner) findViewById(R.id.spinner);
+        TextView tv = (TextView) findViewById(android.R.id.text1);
+        ArrayList<String> arrayList=new ArrayList<>();
+        arrayList.add("成都理工大学");
+        arrayList.add("SM广场");
+        arrayList.add("博物馆");
+        arrayList.add("东郊记忆");
+        final ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,arrayList);
+        //adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+               // textView.setText(adapter.getItem(position));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                //textView.setText("成都理工大学");
+            }
+        });
+    }
     private void init(){
         cardList.clear();
         for(int i=0;i<20;i++){

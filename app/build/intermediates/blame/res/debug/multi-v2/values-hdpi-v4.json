@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Trip6\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "outputFile": "C:\\Users\\fanji\\Tour-1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASU\\.gradle\\caches\\transforms-2\\files-2.1\\ac7e01197a521e076e630f91445c84ca\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\fanji\\.gradle\\caches\\transforms-2\\files-2.1\\1177ed6a8c6e5c5671b0e6414eaa7e3e\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

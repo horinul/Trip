@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
-
+//中间界面RecyclerView的适配器
 public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder>{
     private Context mcontext;
     private List<Card> mcardList;
@@ -31,7 +31,9 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder>{
     public mainAdapter(List<Card> cardList){
         this.mcardList=cardList;
     }
-    public ViewHolder onCreateViewHolder(ViewGroup parent,int viewType){
+
+
+    public ViewHolder onCreateViewHolder(ViewGroup parent,int viewType){//创建新视图
         if(mcontext==null){
             mcontext=parent.getContext();
         }
@@ -50,7 +52,7 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder>{
        });
        return holder;
     }
-    public void onBindViewHolder(ViewHolder holder,int position){
+    public void onBindViewHolder(ViewHolder holder,int position){//替换视图内容
         Card card=mcardList.get(position);
         holder.textView.setText(card.getIntroduce());
         Glide.with(mcontext).load(card.getImageID()).into(holder.imageView);

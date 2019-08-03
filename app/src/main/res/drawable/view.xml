@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--发现界面里的白色背景的圆角设定-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white">
+    </solid>
+    <corners
+        android:bottomRightRadius="0dp"
+        android:bottomLeftRadius="0dp"
+        android:topRightRadius="15dp"
+        android:topLeftRadius="15dp"/>
+
+</shape>

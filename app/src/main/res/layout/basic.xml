@@ -6,12 +6,11 @@
     android:layout_height="match_parent">
 
     <View
-        android:layout_width="487dp"
-        android:layout_height="107dp"
-        android:layout_marginBottom="52dp"
+        android:layout_width="417dp"
+        android:layout_height="105dp"
         android:background="#48D1CC"
-        app:layout_constraintBottom_toTopOf="@+id/icon_iamge"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </View>
 
@@ -75,14 +74,15 @@
         android:id="@+id/imageView5"
         android:layout_width="37dp"
         android:layout_height="39dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="104dp"
         android:background="@drawable/foot"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.188"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.682" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -101,13 +101,10 @@
         android:id="@+id/imageView2"
         android:layout_width="21dp"
         android:layout_height="19dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/to"
         app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <Button
@@ -115,13 +112,13 @@
         android:layout_width="300dp"
         android:layout_height="78dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginTop="364dp"
         android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:gravity="center|left"
         android:text="                  个人信息"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintHorizontal_bias="0.623"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -171,7 +168,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icon_iamge"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.714" />
 
     <ImageView
         android:id="@+id/imageView"

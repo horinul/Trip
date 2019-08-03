@@ -19,14 +19,14 @@ public class basic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.basic);
         setStatusBarUpperAPI21();
-        /**
-         * if(Build.VERSION.SDK_INT>=21){
+        /*
+         if(Build.VERSION.SDK_INT>=21){
             View decorView=getWindow().getDecorView();
             int option=View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
             decorView.setSystemUiVisibility(option);
             //getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
-        **/
+       */
         android.support.v7.app.ActionBar actionbar=getSupportActionBar();
         actionbar.hide();
         Button button=(Button) findViewById(R.id.button);
@@ -47,8 +47,15 @@ public class basic extends AppCompatActivity {
         ImageView imageView3=(ImageView) findViewById(R.id.imageView3);
         imageView3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent1=new Intent(basic.this,main.class);
-                startActivity(intent1);
+                finish();
+            }
+        });
+        Button button3=(Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(basic.this,History.class);
+                startActivity(intent);
             }
         });
     }
