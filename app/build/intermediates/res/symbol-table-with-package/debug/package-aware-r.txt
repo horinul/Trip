@@ -15,6 +15,8 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim dialog_in_anim
+anim dialog_out_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1054,6 +1056,7 @@ drawable edittext
 drawable fa0
 drawable fab_bg_mini
 drawable fab_bg_normal
+drawable firsttext
 drawable flag
 drawable foot
 drawable go
@@ -1095,9 +1098,11 @@ drawable place
 drawable rotate
 drawable save
 drawable science
+drawable secondtext
 drawable set
 drawable shape
 drawable sport
+drawable thirdtext
 drawable to
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1137,6 +1142,7 @@ id always
 id appBar
 id async
 id auto
+id baidu
 id barrier
 id beginning
 id blocking
@@ -1191,6 +1197,7 @@ id direct
 id disableHome
 id down
 id editText
+id editText_1
 id edit_query
 id edittext
 id edittext1
@@ -1213,6 +1220,7 @@ id fixed
 id flag
 id forever
 id frame
+id gaode
 id ghost_view
 id gone
 id group_divider
@@ -1338,6 +1346,7 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tencent
 id text
 id text1
 id text2
@@ -1383,6 +1392,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_cancel
 id uniform
 id unlabeled
 id up
@@ -1465,6 +1475,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_custom_layout
 layout find
 layout history
 layout history_item
@@ -1750,6 +1761,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogTheme
 style MyEditText
 style Platform_AppCompat
 style Platform_AppCompat_Light
@@ -2051,6 +2063,7 @@ style Widget_MaterialComponents_TextInputLayout_OutlinedBox
 style Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
 style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
+style main_menu_animStyle
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

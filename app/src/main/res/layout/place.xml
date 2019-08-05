@@ -9,7 +9,7 @@
 
     <EditText
 
-        android:id="@+id/editText"
+        android:id="@+id/editText_1"
         style="@style/MyEditText"
         android:layout_width="273dp"
         android:layout_height="51dp"
