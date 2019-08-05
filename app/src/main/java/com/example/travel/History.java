@@ -41,8 +41,7 @@ public class History extends AppCompatActivity {
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(History.this,basic.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

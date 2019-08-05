@@ -1,18 +1,19 @@
+
 package com.example.travel;
 
-import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import java.util.ArrayList;
-import java.util.List;
+        import android.content.Context;
+        import android.support.annotation.NonNull;
+        import android.support.v7.widget.RecyclerView;
+        import android.text.Layout;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.ArrayAdapter;
+        import android.widget.ImageView;
+        import android.widget.LinearLayout;
+        import android.widget.TextView;
+        import java.util.ArrayList;
+        import java.util.List;
 
 
 //我的足迹界面的适配器
@@ -21,22 +22,22 @@ public class History_adapter extends RecyclerView.Adapter<History_adapter.ViewHo
     private List<History_item> mlist;
 
     public History_adapter(List<History_item> list) {
-    this.mlist = list;
-}
+        this.mlist = list;
+    }
     class ViewHolder extends RecyclerView.ViewHolder{
-    private LinearLayout LL;
-    private ImageView pic;
-    private TextView time;
-    private TextView name;
+        private LinearLayout LL;
+        private ImageView pic;
+        private TextView time;
+        private TextView name;
 
-    public ViewHolder(View itemView){
-    super(itemView);
-    LL=itemView.findViewById(R.id.LL);
-    pic=itemView.findViewById(R.id.pic);
-    time=itemView.findViewById(R.id.time);
-    name=itemView.findViewById(R.id.name);
-}
-}
+        public ViewHolder(View itemView){
+            super(itemView);
+            LL=itemView.findViewById(R.id.LL);
+            pic=itemView.findViewById(R.id.pic);
+            time=itemView.findViewById(R.id.time);
+            name=itemView.findViewById(R.id.name);
+        }
+    }
 
     @Override
     public int getItemCount() {

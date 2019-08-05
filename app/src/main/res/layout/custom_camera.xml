@@ -22,34 +22,40 @@
         <master.flame.danmaku.ui.widget.DanmakuView
             android:id="@+id/danmaku"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="0dp">
 
         </master.flame.danmaku.ui.widget.DanmakuView>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            >
+            android:id="@+id/LL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
                 <EditText
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
                     android:id="@+id/edittext"
-                    android:hint="                          请输入评论"/>
-                <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="229dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
+                    android:hint="                 请输入评论" />
+
+                <Button
                     android:id="@+id/button"
-                    android:text="发送"/>
-                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
+                    android:text="发送" />
+
+                <Button
                     android:id="@+id/clear"
-                    android:text="清空"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="清空" />
 
         </LinearLayout>
 

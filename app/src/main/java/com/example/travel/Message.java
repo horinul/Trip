@@ -17,23 +17,13 @@ public class Message extends AppCompatActivity {
         super.onCreate(savedInstance);
         setContentView(R.layout.message);
         setStatusBarUpperAPI21();
-        /**
-         *
-        if(Build.VERSION.SDK_INT>=21){
-            View decorview=getWindow().getDecorView();
-            int option=View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
-            decorview.setSystemUiVisibility(option);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);
-        }
-         **/
         ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
         ImageView imageView=(ImageView) findViewById(R.id.imageView3);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Message.this,basic.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

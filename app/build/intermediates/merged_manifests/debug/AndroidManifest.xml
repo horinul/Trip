@@ -52,11 +52,8 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.travel.basic" />
-        <activity android:name="com.example.travel.main" />
         <activity android:name="com.example.travel.Message" />
         <activity android:name="com.example.travel.Set" />
-        <activity android:name="com.example.travel.Place" />
 
         <service
             android:name="com.baidu.location.f"
@@ -66,6 +63,7 @@
         <activity android:name="com.example.travel.Navigation" />
         <activity android:name="com.example.travel.AllPlace" />
         <activity android:name="com.example.travel.History" />
+        <activity android:name="com.example.travel.Main" />
     </application>
 
 </manifest>

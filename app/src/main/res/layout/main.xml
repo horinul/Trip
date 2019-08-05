@@ -6,179 +6,204 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false"
+    tools:context=".Main"
     android:orientation="vertical">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="410dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="36dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="216dp"
-            android:layout_height="77dp"
-            android:layout_marginEnd="160dp"
-            android:gravity="bottom"
-            android:spinnerMode="dropdown"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"></Spinner>
-
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler"
-        android:layout_width="413dp"
-        android:layout_height="673dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="411dp"
+        android:layout_height="760dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
 
-    </android.support.v7.widget.RecyclerView>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:background="@color/white"
-        android:gravity="bottom|center_horizontal"
-        android:orientation="horizontal"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom"
+        android:layout_width="410dp"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:background="#48D1CC"
+        app:itemIconTint="@drawable/change"
+        app:itemTextColor="@drawable/change"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/toolbar">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <!--  <Spinner
+          android:id="@+id/spinner"
+          android:layout_width="189dp"
+          android:layout_height="57dp"
+          android:layout_marginLeft="50dp"
+          android:gravity="bottom"
+          android:spinnerMode="dropdown"></Spinner>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler"
+          android:layout_width="369dp"
+          android:layout_height="711dp"
+          android:layout_marginLeft="0dp"
+          android:layout_marginTop="65dp"
+          app:layout_constraintHorizontal_bias="0.388"
+          app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>-->
 
 
-        <LinearLayout
-            android:id="@+id/LL1"
-            android:layout_width="72dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="30dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/LL2"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent">
+<!-- <LinearLayout
+      android:layout_width="327dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:id="@+id/LL"
+      android:layout_marginEnd="8dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/frame">
 
-            <ImageView
-                android:id="@+id/IM1"
-                android:layout_width="53dp"
-                android:layout_height="53dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/place"
-                android:clickable="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.653"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/TV1"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:clickable="false"
-                android:gravity="center"
-                android:text="附近"
-                android:textSize="14dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/IM1" />
-        </LinearLayout>
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/linearLayout2"
+      android:layout_width="match_parent"
+      android:layout_height="85dp"
+      android:background="@color/white"
+      android:gravity="bottom|center_horizontal"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:id="@+id/LL2"
-            android:layout_width="103dp"
-            android:layout_height="131dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
 
-            <ImageView
-                android:id="@+id/IM2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="13dp"
-                android:background="@drawable/photo"
-                android:clickable="false"
-                app:layout_constraintBottom_toTopOf="@+id/TV2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
+      <LinearLayout
+          android:id="@+id/LL1"
+          android:layout_width="72dp"
+          android:layout_height="100dp"
+          android:layout_marginEnd="30dp"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/LL2"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:id="@+id/TV2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:clickable="false"
-                android:text="发现"
-                android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.491"
-                app:layout_constraintStart_toStartOf="parent" />
-        </LinearLayout>
+          <ImageView
+              android:id="@+id/IM1"
+              android:layout_width="53dp"
+              android:layout_height="53dp"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="16dp"
+              android:layout_marginEnd="8dp"
+              android:background="@drawable/place"
+              android:clickable="false"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.653"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/LL3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.911"
-            app:layout_constraintStart_toEndOf="@+id/LL2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+          <TextView
+              android:id="@+id/TV1"
+              android:layout_width="50dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="8dp"
+              android:layout_marginEnd="8dp"
+              android:clickable="false"
+              android:gravity="center"
+              android:text="附近"
+              android:textSize="14dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/IM1" />
+      </LinearLayout>
 
-            <ImageView
-                android:id="@+id/IM3"
-                android:layout_width="53dp"
-                android:layout_height="53dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="8dp"
+      <LinearLayout
+          android:id="@+id/LL2"
+          android:layout_width="103dp"
+          android:layout_height="131dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent">
 
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/person"
-                android:clickable="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.517"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+          <ImageView
+              android:id="@+id/IM2"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="13dp"
+              android:background="@drawable/photo"
+              android:clickable="false"
+              app:layout_constraintBottom_toTopOf="@+id/TV2"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent" />
 
-            <TextView
-                android:id="@+id/TV3"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:clickable="false"
-                android:gravity="center_horizontal"
-                android:text="个人信息"
-                android:textSize="14dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/IM3" />
-        </LinearLayout>
-    </LinearLayout>
+          <TextView
+              android:id="@+id/TV2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginEnd="8dp"
+              android:clickable="false"
+              android:text="发现"
+              android:textSize="14dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.491"
+              app:layout_constraintStart_toStartOf="parent" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/LL3"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="20dp"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.911"
+          app:layout_constraintStart_toEndOf="@+id/LL2"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="1.0">
+
+          <ImageView
+              android:id="@+id/IM3"
+              android:layout_width="53dp"
+              android:layout_height="53dp"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginStart="8dp"
+
+              android:layout_marginEnd="8dp"
+              android:background="@drawable/person"
+              android:clickable="false"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.517"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/TV3"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="8dp"
+              android:layout_marginEnd="8dp"
+              android:clickable="false"
+              android:gravity="center_horizontal"
+              android:text="个人信息"
+              android:textSize="14dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/IM3" />
+      </LinearLayout>
+  </LinearLayout>-->
+
 </android.support.constraint.ConstraintLayout>

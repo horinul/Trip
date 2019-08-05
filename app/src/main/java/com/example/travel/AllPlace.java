@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -21,18 +23,10 @@ public class AllPlace extends AppCompatActivity {
     private Card[] card = {new Card("111", R.drawable.card1), new Card("222", R.drawable.card2), new Card("333", R.drawable.card3)};
     private List<Card> cardList = new ArrayList<>();
     private mainAdapter adapter;
-
     public void onCreate(Bundle saveIntstancestate) {
         super.onCreate(saveIntstancestate);
         setContentView(R.layout.allplace);
-        if(Build.VERSION.SDK_INT>=21){
-            View decorView=getWindow().getDecorView();
-            int option=View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
-            decorView.setSystemUiVisibility(option);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);
-        }
-        ActionBar actionbar=getSupportActionBar();
-        actionbar.hide();
+        setStatusBarUpperAPI21();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(gridLayoutManager);
@@ -56,6 +50,14 @@ public class AllPlace extends AppCompatActivity {
             int index = random.nextInt(card.length);
             cardList.add(card[index]);
         }
+    }
+    private void setStatusBarUpperAPI21(){
+        Window window = getWindow();
+        //取消设置悬浮透明状态栏,ContentView便不会进入状态栏的下方了
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+        //设置状态栏颜色
+        window.setStatusBarColor(getResources().getColor(R.color.view));
     }
 
 }

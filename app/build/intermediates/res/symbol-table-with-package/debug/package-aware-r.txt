@@ -237,6 +237,22 @@ attr fabCradleRoundedCornerRadius
 attr fabCradleVerticalOffset
 attr fabCustomSize
 attr fabSize
+attr fab_addButtonColorNormal
+attr fab_addButtonColorPressed
+attr fab_addButtonPlusIconColor
+attr fab_addButtonSize
+attr fab_addButtonStrokeVisible
+attr fab_colorDisabled
+attr fab_colorNormal
+attr fab_colorPressed
+attr fab_expandDirection
+attr fab_icon
+attr fab_labelStyle
+attr fab_labelsPosition
+attr fab_plusIconColor
+attr fab_size
+attr fab_stroke_visible
+attr fab_title
 attr fastScrollEnabled
 attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
@@ -603,6 +619,7 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color button
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -831,7 +848,17 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_actions_spacing
+dimen fab_icon_size
+dimen fab_labels_margin
 dimen fab_margin
+dimen fab_plus_icon_size
+dimen fab_plus_icon_stroke
+dimen fab_shadow_offset
+dimen fab_shadow_radius
+dimen fab_size_mini
+dimen fab_size_normal
+dimen fab_stroke_width
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1011,6 +1038,7 @@ drawable button1
 drawable card1
 drawable card2
 drawable card3
+drawable change
 drawable circle
 drawable cursor
 drawable darkgray
@@ -1024,6 +1052,8 @@ drawable dkgray
 drawable eat
 drawable edittext
 drawable fa0
+drawable fab_bg_mini
+drawable fab_bg_normal
 drawable flag
 drawable foot
 drawable go
@@ -1065,6 +1095,7 @@ drawable place
 drawable rotate
 drawable save
 drawable science
+drawable set
 drawable shape
 drawable sport
 drawable to
@@ -1076,19 +1107,10 @@ drawable walk
 id ALT
 id CTRL
 id FUNCTION
-id IM1
-id IM2
-id IM3
 id LL
-id LL1
-id LL2
-id LL3
 id META
 id SHIFT
 id SYM
-id TV1
-id TV2
-id TV3
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1128,13 +1150,16 @@ id button5
 id button6
 id button7
 id button8
+id button9
 id buttonPanel
+id c1
+id c2
+id c3
 id cardView
 id cardView2
 id cardView3
 id cardView4
 id cardView5
-id cardView6
 id center
 id center_horizontal
 id center_vertical
@@ -1164,6 +1189,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id down
 id editText
 id edit_query
 id edittext
@@ -1177,6 +1203,8 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab_expand_menu_button
+id fab_label
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1184,6 +1212,7 @@ id filled
 id fixed
 id flag
 id forever
+id frame
 id ghost_view
 id gone
 id group_divider
@@ -1199,7 +1228,6 @@ id imageView
 id imageView10
 id imageView11
 id imageView12
-id imageView13
 id imageView2
 id imageView3
 id imageView4
@@ -1224,7 +1252,6 @@ id linearLayout2
 id linearLayout3
 id linearLayout4
 id linearLayout5
-id linearLayout7
 id listMode
 id list_item
 id masked
@@ -1365,6 +1392,7 @@ id view2
 id view3
 id view4
 id view5
+id view6
 id view7
 id view_offset_helper
 id visible
@@ -1437,6 +1465,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout find
 layout history
 layout history_item
 layout land
@@ -1460,6 +1489,7 @@ layout select_dialog_singlechoice_material
 layout set
 layout start
 layout support_simple_spinner_dropdown_item
+menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap ic_tour
@@ -2027,6 +2057,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable AddFloatingActionButton fab_plusIconColor
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -2058,8 +2089,9 @@ styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable DesignTheme bottomSheetDialogTheme bottomSheetStyle
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
-styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor showMotionSpec useCompatPadding
+styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation fabCustomSize fabSize fab_colorDisabled fab_colorNormal fab_colorPressed fab_icon fab_size fab_stroke_visible fab_title hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
+styleable FloatingActionsMenu fab_addButtonColorNormal fab_addButtonColorPressed fab_addButtonPlusIconColor fab_addButtonSize fab_addButtonStrokeVisible fab_expandDirection fab_labelStyle fab_labelsPosition
 styleable FlowLayout itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex

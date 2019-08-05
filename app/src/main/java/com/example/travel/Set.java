@@ -15,35 +15,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.zip.Inflater;
 
 public class Set extends AppCompatActivity {
-  public void onCreate(Bundle savedInstance){
+    public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         setContentView(R.layout.set);
-      setStatusBarUpperAPI21();
-      /**
-       *
-      if(Build.VERSION.SDK_INT>=21){
-        View decorview=getWindow().getDecorView();
-        int option=View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
-        decorview.setSystemUiVisibility(option);
-        getWindow().setStatusBarColor(Color.TRANSPARENT);}
-       **/
-        ActionBar actionBar=getSupportActionBar();
+        setStatusBarUpperAPI21();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-        ImageView imageView=(ImageView) findViewById(R.id.imageView3);
-        imageView.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-              Intent intent=new Intent(Set.this,basic.class);
-              startActivity(intent);
-          }
-      });
+        Button button9=(Button) findViewById(R.id.button9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
-    private void setStatusBarUpperAPI21(){
+   private void setStatusBarUpperAPI21(){
         Window window = getWindow();
         //取消设置悬浮透明状态栏,ContentView便不会进入状态栏的下方了
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -51,6 +43,7 @@ public class Set extends AppCompatActivity {
         //设置状态栏颜色
         window.setStatusBarColor(getResources().getColor(R.color.view));
     }
-}
+    }
+
 
 

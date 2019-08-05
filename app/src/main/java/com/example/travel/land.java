@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +32,7 @@ public class land extends AppCompatActivity {
                 String name = nameinput.getText().toString();
                 String ps = psinput.getText().toString();
                 if (name.equals("admin") && ps.equals("123456")) {
-                    Intent intent = new Intent(land.this, main.class);
+                    Intent intent = new Intent(land.this, Main.class);
                     Toast.makeText(land.this, "登陆成功", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 } else Toast.makeText(land.this, "您的账号或密码有误，请重新输入", Toast.LENGTH_SHORT).show();

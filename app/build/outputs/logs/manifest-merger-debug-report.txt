@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\9fb90f267c4afb76df422a0c524e3299\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\1177ed6a8c6e5c5671b0e6414eaa7e3e\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:2:1-11:12
@@ -11,6 +11,7 @@ MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\fanji\.gradle\
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2cc7e27e0b3f1303356f7a4df469c442\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.ctiao:DanmakuFlameMaster:0.5.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\1102479ee58d2cb35d571ab24c6d1c4f\AndroidManifest.xml:17:1-26:12
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\ca9c81ac2db2188716ea825215ce7c10\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\33b2c25b70e1e2bf5428574e8cf38782\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\d551e3128c37433ba46841d3957d92c9\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\4136a02e445f50fbf949ed1924438fd0\AndroidManifest.xml:17:1-22:12
@@ -37,20 +38,20 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\fanji\.gradle\cac
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\2147abaca25e840b8659bbfab3d196ff\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\a24ff92e5dd982b4731e25d3b2f365da\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\9a5109c5f9746f8d37ad4bf11b0cbb74\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:2:11-69
@@ -95,13 +96,15 @@ ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:14:5-64
 	android:name
 		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:14:22-62
 application
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:16:5-59:19
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:16:5-56:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\9fb90f267c4afb76df422a0c524e3299\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\9fb90f267c4afb76df422a0c524e3299\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\7387f0d4e685326844410ca45e8974f5\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:9:5-20
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\ca9c81ac2db2188716ea825215ce7c10\AndroidManifest.xml:12:5-20
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\ca9c81ac2db2188716ea825215ce7c10\AndroidManifest.xml:12:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\be08efef1016979d2324b0af8f815aa1\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\be08efef1016979d2324b0af8f815aa1\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\4125242ed481998e30da784b95ee2659\AndroidManifest.xml:22:5-23:19
@@ -166,46 +169,38 @@ action#android.intent.action.VIEW
 ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
 		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:43:25-66
-activity#com.example.travel.basic
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:46:9-43
-	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:46:19-40
-activity#com.example.travel.main
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:47:9-42
-	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:47:19-39
 activity#com.example.travel.Message
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:48:9-45
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:46:9-45
 	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:48:19-42
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:46:19-42
 activity#com.example.travel.Set
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:49:9-50
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:47:9-50
 	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:49:19-38
-activity#com.example.travel.Place
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:50:9-43
-	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:50:19-40
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:47:19-38
 service#com.baidu.location.f
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:52:9-55:49
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:48:9-51:49
 	android:process
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:55:13-38
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:51:13-38
 	android:enabled
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:54:13-35
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:50:13-35
 	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:53:13-48
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:49:13-48
 activity#com.example.travel.Navigation
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:56:9-57
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:52:9-57
 	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:56:19-45
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:52:19-45
 activity#com.example.travel.AllPlace
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:57:9-55
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:53:9-55
 	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:57:19-43
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:53:19-43
 activity#com.example.travel.History
-ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:58:9-54
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:54:9-54
 	android:name
-		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:58:19-42
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:54:19-42
+activity#com.example.travel.Main
+ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:55:9-51
+	android:name
+		ADDED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml:55:19-39
 uses-sdk
 INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\fanji\Tour-1\app\src\main\AndroidManifest.xml
@@ -224,6 +219,8 @@ MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\t
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\de070106e659f1b0d49122edb375cadc\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.ctiao:DanmakuFlameMaster:0.5.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\1102479ee58d2cb35d571ab24c6d1c4f\AndroidManifest.xml:22:5-24:41
 MERGED from [com.github.ctiao:DanmakuFlameMaster:0.5.3] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\1102479ee58d2cb35d571ab24c6d1c4f\AndroidManifest.xml:22:5-24:41
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\ca9c81ac2db2188716ea825215ce7c10\AndroidManifest.xml:8:5-10:41
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\ca9c81ac2db2188716ea825215ce7c10\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\33b2c25b70e1e2bf5428574e8cf38782\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\33b2c25b70e1e2bf5428574e8cf38782\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\fanji\.gradle\caches\transforms-2\files-2.1\d551e3128c37433ba46841d3957d92c9\AndroidManifest.xml:20:5-44

@@ -16,6 +16,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -48,7 +49,7 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
     private Canvas canvas;
     private TextPaint textPaint;
     private IDanmakuView iDanmakuView;
-
+    private LinearLayout LL;
     //弹幕解析器
     private BaseDanmakuParser parser=new BaseDanmakuParser() {
         @Override
@@ -105,6 +106,27 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
         danmakuView=(DanmakuView) findViewById(R.id.danmaku);
         //提升弹幕绘制效率
         danmakuView.enableDanmakuDrawingCache(true);
+        LL=(LinearLayout) findViewById(R.id.LL);
+        danmakuView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LL.setVisibility(LL.getVisibility() == LL.INVISIBLE ? LL.VISIBLE : LL.INVISIBLE);
+                //Toast.makeText(CustomCamera.this,"000",Toast.LENGTH_SHORT).show();
+            }
+        });
+      /*  iDanmakuView.setOnDanmakuClickListener(new IDanmakuView.OnDanmakuClickListener() {
+            @Override
+            public boolean onDanmakuClick(IDanmakus danmakus) {
+
+                return false;
+            }
+
+            @Override
+            public boolean onViewClick(IDanmakuView view) {
+
+                return false;
+            }
+        });*/
         danmakuView.setCallback(new DrawHandler.Callback() {
             @Override
             public void prepared() {
@@ -128,7 +150,7 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
 
             }
         });
-        iDanmakuView.setOnDanmakuClickListener(new IDanmakuView.OnDanmakuClickListener() {
+ /*       iDanmakuView.setOnDanmakuClickListener(new IDanmakuView.OnDanmakuClickListener() {
             @Override
             public boolean onDanmakuClick(IDanmakus danmakus) {
                 Toast.makeText(CustomCamera.this,"00",Toast.LENGTH_SHORT).show();
@@ -139,7 +161,7 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
             public boolean onViewClick(IDanmakuView view) {
                 return false;
             }
-        });
+        });*/
 
 
         danmakuContext=DanmakuContext.create();
@@ -149,10 +171,8 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
         //控制行数
         HashMap<Integer,Integer> maxLines=new HashMap<>();
         maxLines.put(BaseDanmaku.TYPE_SCROLL_RL,5);
-        //控制是否重叠
-        HashMap<Integer,Boolean> enable=new HashMap<>();
-        enable.put(BaseDanmaku.TYPE_SCROLL_RL,true);
-        enable.put(BaseDanmaku.TYPE_FIX_TOP,true);
+
+
     }
 
     //增加一条弹幕
@@ -162,28 +182,10 @@ private void addDanmaku(String content,Boolean withBorder){
         danmaku.padding=5;
         danmaku.textSize=50;
         danmaku.setTime(danmakuView.getCurrentTime());
-        AlphaAnimation alphaAnimation1 = new AlphaAnimation(0.0f, 1.0f);
+   /*     AlphaAnimation alphaAnimation1 = new AlphaAnimation(0.0f, 1.0f);
         alphaAnimation1.setDuration(3000);//多长时间完成这个动作
-        danmakuView.startAnimation(alphaAnimation1);
-        AlphaAnimation alphaAnimation2 = new AlphaAnimation(1.0f, 0.0f);
-        alphaAnimation2.setDuration(8000);
-        danmakuView.startAnimation(alphaAnimation2);
-        alphaAnimation2.setAnimationListener(new Animation.AnimationListener() {
-        @Override
-        public void onAnimationStart(Animation animation) {
+        danmakuView.startAnimation(alphaAnimation1);*/
 
-        }
-
-        @Override
-        public void onAnimationEnd(Animation animation) {
-            danmakuView.setVisibility(View.GONE);
-        }
-
-        @Override
-        public void onAnimationRepeat(Animation animation) {
-
-        }
-    });
 //控制输入弹幕框的颜色
     if(withBorder){
             danmaku.borderColor=Color.BLUE;
@@ -196,6 +198,7 @@ private void addDanmaku(String content,Boolean withBorder){
             danmakuView.removeAllDanmakus(true);
         }
     }
+
 //随机生成弹幕
  /*   private void generateSomeDanmaku(){
         new Thread(new Runnable() {
