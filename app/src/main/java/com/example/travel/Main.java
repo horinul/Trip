@@ -46,7 +46,7 @@ public class Main extends AppCompatActivity {
         mfragments.add(new FR1());
         mfragments.add(new FR2());
         mfragments.add(new FR3());
-        setFragmentPosition(0);
+        setFragmentPosition(1);
     }
 
     private void initBottom(){

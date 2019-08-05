@@ -19,6 +19,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.github.clans.fab.FloatingActionButton;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Random;
@@ -75,9 +77,10 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
         mPreview=findViewById(R.id.preview);
 
 
+
         //发送弹幕
-        button=(Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton floatingActionButton1 =(FloatingActionButton) findViewById(R.id.send);
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String text=editText.getText().toString();
@@ -89,8 +92,8 @@ public class CustomCamera extends AppCompatActivity implements SurfaceHolder.Cal
 
 
         //清空弹幕
-        button1=(Button) findViewById(R.id.clear);
-        button1.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton floatingActionButton2 =(FloatingActionButton) findViewById(R.id.clear);
+        floatingActionButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 removeAllDanmaku(true);

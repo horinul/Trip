@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\App\\Trip_8\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\fanji\\Trip_8\\Trip_8\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASU\\.gradle\\caches\\transforms-2\\files-2.1\\ac7e01197a521e076e630f91445c84ca\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\fanji\\.gradle\\caches\\transforms-2\\files-2.1\\1177ed6a8c6e5c5671b0e6414eaa7e3e\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ASU\\.gradle\\caches\\transforms-2\\files-2.1\\ff20335badfdba0def70d895a2a2072b\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\fanji\\.gradle\\caches\\transforms-2\\files-2.1\\2cc7e27e0b3f1303356f7a4df469c442\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -43,21 +43,27 @@
                     android:layout_gravity="bottom"
                     android:hint="                 请输入评论" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:text="发送" />
-
-                <Button
-                    android:id="@+id/clear"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:text="清空" />
-
         </LinearLayout>
 
-
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu_colorNormal="#48D1CC"
+            app:layout_constraintEnd_toEndOf="parent">
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/send"
+                    android:src="@drawable/send1"
+                    app:fab_colorNormal="#48D1CC"
+                    app:fab_label="发送"/>
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/clear1"
+                    android:id="@+id/clear"
+                    app:fab_colorNormal="#48D1CC"
+                    app:fab_label="清除"/>
+        </com.github.clans.fab.FloatingActionMenu>
 </android.support.constraint.ConstraintLayout>

@@ -42,15 +42,8 @@ public class FR2 extends Fragment {
         recyclerView.setAdapter(adapter);
         init();
         spinner();
-      /*   FloatingActionButton floatingActionButton=(FloatingActionButton) getActivity().findViewById(R.id.button);
+        FloatingActionButton floatingActionButton=(FloatingActionButton) getActivity().findViewById(R.id.button);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),CustomCamera.class));
-            }
-        });*/
-       Button button=(Button) getActivity().findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(),CustomCamera.class));
