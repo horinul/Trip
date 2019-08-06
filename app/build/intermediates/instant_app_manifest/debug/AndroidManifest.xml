@@ -31,6 +31,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.travel.Comment_Package.CommentAcitvity" />
         <activity android:name="com.example.travel.CustomCamera" />
 
         <meta-data
@@ -48,7 +49,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.travel.land" />
+        <activity android:name="com.example.travel.Land" />
         <activity android:name="com.example.travel.register" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -62,7 +63,6 @@
             android:enabled="true"
             android:process=":remote" />
 
-        <activity android:name="com.example.travel.Navigation" />
         <activity android:name="com.example.travel.AllPlace" />
         <activity android:name="com.example.travel.History" />
         <activity android:name="com.example.travel.Main" />

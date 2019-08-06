@@ -14,9 +14,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.travel.Comment_Package.CommentAcitvity;
 
 public class SceneryActivity extends AppCompatActivity {
-
+    private FloatingActionButton floatingActionButton;
     public static final String SCENERY_NAME="scenery_name";
     public static final String SCENERY_IMAGE_ID="scenery_image_id";
     @Override
@@ -27,7 +28,14 @@ public class SceneryActivity extends AppCompatActivity {
         String sceneryName=intent.getStringExtra(SCENERY_NAME);
         int sceneryImageid=intent.getIntExtra(SCENERY_IMAGE_ID,0);
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
+        floatingActionButton=findViewById(R.id.comment_floatingActionButton);
         CollapsingToolbarLayout collapsingToolbarLayout=(CollapsingToolbarLayout)findViewById(R.id.collapsing_toolbar);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SceneryActivity.this,CommentAcitvity.class));
+            }
+        });
         ImageView sceneryView=(ImageView)findViewById(R.id.scenery_image_view);
         TextView sceneryContentText=(TextView)findViewById(R.id.scenery_text);
         setSupportActionBar(toolbar);
@@ -57,6 +65,5 @@ public class SceneryActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }

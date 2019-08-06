@@ -26,6 +26,8 @@ public class AllPlace extends AppCompatActivity {
     public void onCreate(Bundle saveIntstancestate) {
         super.onCreate(saveIntstancestate);
         setContentView(R.layout.allplace);
+        ActionBar actionbar=getSupportActionBar();
+        actionbar.hide();
         setStatusBarUpperAPI21();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);

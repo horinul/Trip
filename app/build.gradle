@@ -34,4 +34,8 @@ dependencies {
     implementation 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
     implementation 'com.getbase:floatingactionbutton:1.10.1'
     implementation 'com.github.clans:fab:1.6.4'
+    //comment_package
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    implementation 'com.google.code.gson:gson:2.7'
+
 }

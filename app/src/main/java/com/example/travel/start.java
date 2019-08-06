@@ -1,7 +1,5 @@
 package com.example.travel;
 
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +9,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import java.security.PublicKey;
-
 public class start extends Activity {
     private ImageView image1;
     private Handler handler=new Handler(){
@@ -20,7 +16,7 @@ public class start extends Activity {
         public void handleMessage(Message msg){
             if(msg.what!=0){}
             else{
-                Intent intent=new Intent(start.this,land.class);
+                Intent intent=new Intent(start.this, Land.class);
                 startActivity(intent);
                 finish();
             }

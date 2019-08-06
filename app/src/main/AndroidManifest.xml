@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".MyApplication"
@@ -21,7 +21,8 @@
         android:roundIcon="@mipmap/ic_tour"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CustomCamera"></activity>
+        <activity android:name=".Comment_Package.CommentAcitvity"></activity>
+        <activity android:name=".CustomCamera" />
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -38,22 +39,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".land" />
+        <activity android:name=".Land" />
         <activity android:name=".register">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
         <activity android:name=".Message" />
-        <activity android:name=".Set"></activity>
+        <activity android:name=".Set" />
+
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"></service>
-        <activity android:name=".Navigation"></activity>
-        <activity android:name=".AllPlace"></activity>
-        <activity android:name=".History"></activity>
-        <activity android:name=".Main"></activity>
+            android:process=":remote" />
+
+        <activity android:name=".AllPlace" />
+        <activity android:name=".History" />
+        <activity android:name=".Main" />
     </application>
 
 </manifest>

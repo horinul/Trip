@@ -1,13 +1,20 @@
 package com.example.travel;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -18,24 +25,34 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class FR2 extends Fragment {
+    public static final int UDPATE_SCENERY=1;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private Card[] card = {new Card("111", R.drawable.card1), new Card("222", R.drawable.card2), new Card("333", R.drawable.card3)};
     private List<Card> cardList = new ArrayList<>();
     private mainAdapter adapter;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.find, container, false);
-
     }
 
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.recycler);
+        swipeRefreshLayout=(SwipeRefreshLayout) getActivity().findViewById(R.id.swipe_refresh);
+        swipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.cyan));
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshScenery();
+            }
+        });
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 1);
         recyclerView.setLayoutManager(gridLayoutManager);
         adapter = new mainAdapter(cardList);
@@ -46,9 +63,61 @@ public class FR2 extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(),CustomCamera.class));
+               if(ContextCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
+                   ActivityCompat.requestPermissions(getActivity(),new String[]{Manifest.permission.CAMERA},1);
+               }else {
+                   startActivity(new Intent(getActivity(),CustomCamera.class));
+               }
             }
         });
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode){
+            case 1:
+                if(grantResults.length>0&&grantResults[0]==PackageManager.PERMISSION_GRANTED){
+                    startActivity(new Intent(getActivity(),CustomCamera.class));
+                }else{
+                    Toast.makeText(getContext(),"你否定了权限",Toast.LENGTH_SHORT).show();
+                }
+                break;
+                default:
+        }
+    }
+
+    /**
+     * 异步线程加载UI
+     */
+    private Handler handler=new Handler(){
+        public void handleMessage(Message asg) {
+            switch (asg.what) {
+                case UDPATE_SCENERY:
+                    init();
+                    adapter.notifyDataSetChanged();
+                    swipeRefreshLayout.setRefreshing(false);
+            }
+        }
+    };
+
+    /**
+     *
+     * 开启子线程加载UI，防止主线程堵塞
+     */
+    private void refreshScenery(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                    Message message=new Message();
+                    message.what=UDPATE_SCENERY;
+                    handler.sendMessage(message);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 
     public void spinner() {

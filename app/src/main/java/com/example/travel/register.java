@@ -38,7 +38,7 @@ public class register extends AppCompatActivity {
         }
         else {
             Toast.makeText(register.this,"注册成功",Toast.LENGTH_SHORT).show();
-            Intent intent2=new Intent(register.this,land.class);
+            Intent intent2=new Intent(register.this, Land.class);
             startActivity(intent2);
         }
             }
