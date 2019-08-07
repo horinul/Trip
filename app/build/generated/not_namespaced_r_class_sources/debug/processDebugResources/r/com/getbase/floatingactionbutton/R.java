@@ -46,27 +46,27 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int fab_bg_mini = 0x7f070078;
-        public static final int fab_bg_normal = 0x7f070079;
+        public static final int fab_bg_mini = 0x7f07007a;
+        public static final int fab_bg_normal = 0x7f07007b;
     }
     public static final class id {
         private id() {}
 
-        public static final int down = 0x7f080064;
-        public static final int fab_expand_menu_button = 0x7f080073;
-        public static final int fab_label = 0x7f080074;
-        public static final int left = 0x7f0800a0;
-        public static final int mini = 0x7f0800af;
-        public static final int normal = 0x7f0800b8;
-        public static final int right = 0x7f0800ce;
-        public static final int up = 0x7f080134;
+        public static final int down = 0x7f080066;
+        public static final int fab_expand_menu_button = 0x7f080076;
+        public static final int fab_label = 0x7f080077;
+        public static final int left = 0x7f0800a3;
+        public static final int mini = 0x7f0800b4;
+        public static final int normal = 0x7f0800be;
+        public static final int right = 0x7f0800d5;
+        public static final int up = 0x7f08013c;
     }
     public static final class styleable {
         private styleable() {}
 
         public static final int[] AddFloatingActionButton = { 0x7f0300e4 };
         public static final int AddFloatingActionButton_fab_plusIconColor = 0;
-        public static final int[] FloatingActionButton = { 0x7f030034, 0x7f030035, 0x7f03003f, 0x7f0300bf, 0x7f0300d2, 0x7f0300d3, 0x7f0300d9, 0x7f0300da, 0x7f0300db, 0x7f0300dc, 0x7f0300dd, 0x7f0300df, 0x7f0300e0, 0x7f0300e1, 0x7f0300e5, 0x7f0300e6, 0x7f0300e7, 0x7f0300e8, 0x7f0300e9, 0x7f0300ea, 0x7f0300eb, 0x7f0300ec, 0x7f0300ed, 0x7f0300ee, 0x7f0300ef, 0x7f0300f0, 0x7f0300f1, 0x7f0300f2, 0x7f0300f3, 0x7f03010e, 0x7f030116, 0x7f030186, 0x7f0301c7, 0x7f0301d1, 0x7f0301dd, 0x7f030254 };
+        public static final int[] FloatingActionButton = { 0x7f030034, 0x7f030035, 0x7f03003f, 0x7f0300bf, 0x7f0300d2, 0x7f0300d3, 0x7f0300d9, 0x7f0300da, 0x7f0300db, 0x7f0300dc, 0x7f0300dd, 0x7f0300df, 0x7f0300e0, 0x7f0300e1, 0x7f0300e5, 0x7f0300e6, 0x7f0300e7, 0x7f0300e8, 0x7f0300e9, 0x7f0300ea, 0x7f0300eb, 0x7f0300ec, 0x7f0300ed, 0x7f0300ee, 0x7f0300ef, 0x7f0300f0, 0x7f0300f1, 0x7f0300f2, 0x7f0300f3, 0x7f03010e, 0x7f030116, 0x7f030186, 0x7f0301c7, 0x7f0301d1, 0x7f0301dd, 0x7f030255 };
         public static final int FloatingActionButton_backgroundTint = 0;
         public static final int FloatingActionButton_backgroundTintMode = 1;
         public static final int FloatingActionButton_borderWidth = 2;

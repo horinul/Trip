@@ -185,9 +185,25 @@ private void addDanmaku(String content,Boolean withBorder){
         danmaku.padding=5;
         danmaku.textSize=50;
         danmaku.setTime(danmakuView.getCurrentTime());
-   /*     AlphaAnimation alphaAnimation1 = new AlphaAnimation(0.0f, 1.0f);
+        AlphaAnimation alphaAnimation1 = new AlphaAnimation(0.0f, 1.0f);
         alphaAnimation1.setDuration(3000);//多长时间完成这个动作
-        danmakuView.startAnimation(alphaAnimation1);*/
+        danmakuView.startAnimation(alphaAnimation1);
+        alphaAnimation1.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                danmakuView.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
 
 //控制输入弹幕框的颜色
     if(withBorder){

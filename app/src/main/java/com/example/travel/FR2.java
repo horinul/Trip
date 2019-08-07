@@ -9,7 +9,6 @@ import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -27,13 +26,17 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.github.clans.fab.FloatingActionButton;
+import com.yalantis.phoenix.PullToRefreshView;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class FR2 extends Fragment {
     public static final int UDPATE_SCENERY=1;
-    private SwipeRefreshLayout swipeRefreshLayout;
+   // private SwipeRefreshLayout swipeRefreshLayout;
+    private PullToRefreshView pullToRefreshView;
     private Card[] card = {new Card("111", R.drawable.card1), new Card("222", R.drawable.card2), new Card("333", R.drawable.card3)};
     private List<Card> cardList = new ArrayList<>();
     private mainAdapter adapter;
@@ -45,13 +48,13 @@ public class FR2 extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.recycler);
-        swipeRefreshLayout=(SwipeRefreshLayout) getActivity().findViewById(R.id.swipe_refresh);
-        swipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.cyan));
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                refreshScenery();
-            }
+        pullToRefreshView=(PullToRefreshView) getActivity().findViewById(R.id.pull_refresh);
+        //pullToRefreshView.setColorSchemeColors(getResources().getColor(R.color.cyan));
+        pullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
+                @Override
+                public void onRefresh () {
+                    refreshScenery();
+                }
         });
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 1);
         recyclerView.setLayoutManager(gridLayoutManager);
@@ -59,7 +62,7 @@ public class FR2 extends Fragment {
         recyclerView.setAdapter(adapter);
         init();
         spinner();
-        FloatingActionButton floatingActionButton=(FloatingActionButton) getActivity().findViewById(R.id.button);
+        com.github.clans.fab.FloatingActionButton floatingActionButton=(FloatingActionButton) getActivity().findViewById(R.id.button);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,7 +98,7 @@ public class FR2 extends Fragment {
                 case UDPATE_SCENERY:
                     init();
                     adapter.notifyDataSetChanged();
-                    swipeRefreshLayout.setRefreshing(false);
+                    pullToRefreshView.setRefreshing(false);
             }
         }
     };
@@ -107,8 +110,9 @@ public class FR2 extends Fragment {
     private void refreshScenery(){
         new Thread(new Runnable() {
             @Override
-            public void run() {
-                try {
+            public void run(){
+
+               try {
                     Thread.sleep(1000);
                     Message message=new Message();
                     message.what=UDPATE_SCENERY;

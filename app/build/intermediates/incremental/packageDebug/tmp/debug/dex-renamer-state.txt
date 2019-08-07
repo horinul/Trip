@@ -1,7 +1,7 @@
-#Tue Aug 06 17:32:47 CST 2019
-base.0=F\:\\App\\Trip_9\\Trip_9\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+#Wed Aug 07 10:51:57 CST 2019
+base.0=C\:\\Users\\fanji\\trip\\Trip_9\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=F\:\\App\\Trip_9\\Trip_9\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+base.1=C\:\\Users\\fanji\\trip\\Trip_9\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out

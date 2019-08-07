@@ -8,47 +8,48 @@
     android:orientation="vertical">
 
 
-  <Spinner
-      android:id="@+id/spinner"
-      android:layout_width="189dp"
-      android:layout_height="57dp"
-      android:layout_marginStart="68dp"
-      android:layout_marginTop="4dp"
-      android:gravity="bottom"
-      android:spinnerMode="dropdown"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"></Spinner>
-
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="189dp"
+        android:layout_height="57dp"
         android:layout_marginStart="68dp"
-        android:backgroundTint="@color/white"
+        android:layout_marginTop="16dp"
+        android:gravity="bottom"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:clickable="true"
-        android:src="@drawable/fab"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner"
-        app:layout_constraintStart_toEndOf="@+id/spinner" />
+        android:src="@drawable/find"
+        app:fab_colorNormal="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/pull_refresh"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/swipe_refresh"
-        android:layout_width="399dp"
-        android:layout_height="678dp"
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_refresh"
+        android:layout_width="410dp"
+        android:layout_height="684dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
 
-               <android.support.v7.widget.RecyclerView
-                   android:id="@+id/recycler"
-                   android:layout_width="399dp"
-                   android:layout_height="678dp"
-                   android:layout_marginStart="8dp"
-                   android:layout_marginEnd="8dp"
-                   />
-    </android.support.v4.widget.SwipeRefreshLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="399dp"
+            android:layout_height="678dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+    </com.yalantis.phoenix.PullToRefreshView>
 
  </android.support.constraint.ConstraintLayout>

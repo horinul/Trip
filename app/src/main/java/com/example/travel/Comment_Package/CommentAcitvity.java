@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.travel.R;
+import com.github.clans.fab.FloatingActionButton;
 import com.google.gson.Gson;
 
 
@@ -35,8 +36,8 @@ public class CommentAcitvity extends AppCompatActivity implements View.OnClickLi
     private BottomSheetDialog dialog;
     private List<CommentDetial> commentsList;
     private List<Interpret> interpretList;
-    private Button commentButton;
-    private Button interpretButton;
+    private FloatingActionButton commentButton;
+    private FloatingActionButton interpretButton;
     private String testJson = "{\n" +
             "\t\"code\": 1000,\n" +
             "\t\"message\": \"查看评论成功\",\n" +

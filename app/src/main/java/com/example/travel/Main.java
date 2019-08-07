@@ -76,9 +76,9 @@ public class Main extends AppCompatActivity {
         Fragment current=mfragments.get(position);//将要加载的界面
         Fragment last=mfragments.get(lastIndex);//上一次加载的界面
         lastIndex=position;//即得到上一次加载的界面
-        ft.remove(last);//收起上次加载的界面
+        //ft.remove(last);//收起上次加载的界面
         if(!current.isAdded()){//对象是否添加到了Activity
-            getSupportFragmentManager().beginTransaction().remove(current).commit();
+            //getSupportFragmentManager().beginTransaction().remove(current).commit();
             ft.replace(R.id.frame,current);
         }
         ft.show(current);

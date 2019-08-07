@@ -629,6 +629,7 @@ attr track
 attr trackTint
 attr trackTintMode
 attr ttcIndex
+attr type
 attr useCompatPadding
 attr viewInflaterClass
 attr voiceIcon
@@ -756,6 +757,7 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -999,6 +1001,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1097,6 +1103,7 @@ drawable back
 drawable background
 drawable blue
 drawable book
+drawable buildings
 drawable button
 drawable button1
 drawable card1
@@ -1105,6 +1112,7 @@ drawable card3
 drawable change
 drawable circle
 drawable clear1
+drawable comment
 drawable comment_bt_selector
 drawable cursor
 drawable darkgray
@@ -1122,6 +1130,7 @@ drawable fab
 drawable fab_add
 drawable fab_bg_mini
 drawable fab_bg_normal
+drawable find
 drawable firsttext
 drawable flag
 drawable foot
@@ -1140,6 +1149,7 @@ drawable icon_work_like
 drawable img1
 drawable img2
 drawable img4
+drawable interpret
 drawable list
 drawable load
 drawable ltgray
@@ -1173,7 +1183,9 @@ drawable secondtext
 drawable send1
 drawable set
 drawable shape
+drawable sky
 drawable sport
+drawable sun
 drawable teaser
 drawable textview_round_border
 drawable thirdtext
@@ -1193,6 +1205,7 @@ id META
 id SHIFT
 id SYM
 id a2
+id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1238,6 +1251,7 @@ id buttonPanel
 id c1
 id c2
 id c3
+id cancel_action
 id cardView
 id cardView2
 id cardView3
@@ -1295,6 +1309,7 @@ id edittext2
 id edittext3
 id edittext4
 id end
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1354,10 +1369,12 @@ id linearLayout2
 id linearLayout3
 id linearLayout4
 id linearLayout5
+id linearLayout6
 id listMode
 id list_item
 id marquee
 id masked
+id media_actions
 id message
 id middle
 id mini
@@ -1367,6 +1384,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id name
 id navigation_header_container
+id nestedScrollView
 id never
 id none
 id normal
@@ -1386,6 +1404,7 @@ id pin
 id preview
 id progress_circular
 id progress_horizontal
+id pull_refresh
 id radio
 id recycler
 id recyclerview
@@ -1437,10 +1456,11 @@ id src_in
 id src_over
 id standard
 id start
+id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
-id swipe_refresh
+id sun
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1588,8 +1608,17 @@ layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout place
@@ -1947,9 +1976,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -2228,6 +2262,7 @@ styleable PopupWindow android_popupBackground android_popupAnimationStyle overla
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RefreshView type
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
