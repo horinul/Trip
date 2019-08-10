@@ -4,9 +4,11 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.text.Editable;
@@ -25,6 +27,11 @@ public class FR1 extends Fragment {
     private double laty = 30.681403;
     public static String mAddress="" ;
     private EditText editText;
+    private LinearLayout linearLayout1;
+    private LinearLayout linearLayout2;
+    private LinearLayout linearLayout3;
+    private LinearLayout linearLayout4;
+    private LinearLayout linearLayout5;
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         return inflater.inflate(R.layout.place, container, false);
@@ -49,7 +56,54 @@ public class FR1 extends Fragment {
                 showBottomDialog();
             }
         });
+
+        linearLayout1=(LinearLayout) getActivity().findViewById(R.id.linearLayout1);
+        linearLayout1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent8=new Intent(getActivity(),EatWeb.class);
+                startActivity(intent8);
+            }
+        });
+
+        linearLayout2=(LinearLayout) getActivity().findViewById(R.id.linearLayout2);
+        linearLayout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),EatWeb.class);
+                startActivity(intent);
+            }
+        });
+
+        linearLayout3=(LinearLayout) getActivity().findViewById(R.id.linearLayout3);
+        linearLayout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),ScienceWeb.class);
+                startActivity(intent);
+            }
+        });
+
+        linearLayout4=(LinearLayout) getActivity().findViewById(R.id.linearLayout4);
+        linearLayout4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),SportWeb.class);
+                startActivity(intent);
+            }
+        });
+
+        linearLayout5=(LinearLayout) getActivity().findViewById(R.id.linearLayout5);
+        linearLayout5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),WalkWeb.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
     private void showBottomDialog(){
         //1、使用Dialog、设置style
         final Dialog dialog = new Dialog(getContext(),R.style.DialogTheme);

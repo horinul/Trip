@@ -16,165 +16,177 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/edittext"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="48dp"
-        android:layout_height="32dp"
+        android:layout_width="44dp"
+        android:layout_height="29dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
         android:text="搜索"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editText_1"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="68dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="4dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-
-            android:src="@drawable/eat" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="吃饭"
-            android:textSize="15dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="68dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout1"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
-        app:layout_constraintVertical_bias="0.666">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:src="@drawable/book" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="学习"
-            android:textSize="15dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="63dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-
-            android:src="@drawable/science" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="科技"
-            android:textSize="15dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="68dp"
-        android:layout_height="89dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-
-            android:src="@drawable/sport" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="运动"
-            android:textSize="15dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="62dp"
-        android:layout_height="87dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_1"
+        app:layout_constraintVertical_bias="1.0">
 
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="58dp"
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="68dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="45dp">
 
-            android:src="@drawable/walk" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="闲逛"
-            android:textSize="15dp" />
-    </LinearLayout>
+                android:src="@drawable/eat" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="吃饭"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="68dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/book" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="学习"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="63dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:src="@drawable/science" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="科技"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="68dp"
+            android:layout_height="89dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:src="@drawable/sport" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="运动"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="62dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="58dp"
+
+                android:src="@drawable/walk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="闲逛"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="575dp"
+        android:layout_width="411dp"
+        android:layout_height="529dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/view"
@@ -185,8 +197,8 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardView5"
-            android:layout_width="113dp"
-            android:layout_height="74dp"
+            android:layout_width="127dp"
+            android:layout_height="84dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             app:cardBackgroundColor="@color/design_default_color_primary"
@@ -230,10 +242,10 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="181dp"
-            android:layout_height="152dp"
+            android:layout_width="190dp"
+            android:layout_height="163dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="28dp"
             app:cardBackgroundColor="@color/design_default_color_primary"
             app:cardCornerRadius="10dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -244,7 +256,7 @@
             android:layout_width="208dp"
             android:layout_height="190dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="132dp"
+            android:layout_marginBottom="88dp"
             app:cardBackgroundColor="@color/design_default_color_primary"
             app:cardCornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -255,7 +267,7 @@
             android:layout_width="127dp"
             android:layout_height="98dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="40dp"
             app:cardBackgroundColor="@color/design_default_color_primary"
             app:cardCornerRadius="10dp"
             app:layout_constraintStart_toEndOf="@+id/cardView2"
@@ -265,8 +277,8 @@
             android:id="@+id/cardView3"
             android:layout_width="164dp"
             android:layout_height="133dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="80dp"
             app:cardBackgroundColor="@color/design_default_color_primary"
             app:cardCornerRadius="10dp"
             app:layout_constraintStart_toEndOf="@+id/cardView"

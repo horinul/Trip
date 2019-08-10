@@ -19,6 +19,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_tour"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Comment_Package.CommentAcitvity"></activity>
@@ -48,6 +49,7 @@
         <activity android:name=".Message" />
         <activity android:name=".Set" />
 
+
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
@@ -56,6 +58,11 @@
         <activity android:name=".AllPlace" />
         <activity android:name=".History" />
         <activity android:name=".Main" />
+        <activity android:name=".EatWeb"/>
+        <activity android:name=".WalkWeb"/>
+        <activity android:name=".SportWeb"/>
+        <activity android:name=".ScienceWeb"/>
+        <activity android:name=".StudyWeb"/>
     </application>
 
 </manifest>

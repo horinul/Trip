@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Aug 06 21:42:10 CST 2019
+#Fri Aug 09 20:25:57 CST 2019
 17.baseType=DIRECTORY
 4.path=lib/armeabi-v7a/libBaiduMapSDK_map_v5_4_1.so
 8.set=NATIVE_RESOURCE

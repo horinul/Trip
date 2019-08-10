@@ -1084,6 +1084,10 @@
         "source": "C:\\Users\\fanji\\trip\\Trip_9\\app\\src\\main\\res\\drawable\\clear1.png"
     },
     {
+        "merged": "C:\\Users\\fanji\\trip\\Trip_9\\app\\build\\intermediates\\res\\merged\\debug\\layout_web.xml.flat",
+        "source": "C:\\Users\\fanji\\trip\\Trip_9\\app\\src\\main\\res\\layout\\web.xml"
+    },
+    {
         "merged": "C:\\Users\\fanji\\trip\\Trip_9\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\fanji\\.gradle\\caches\\transforms-2\\files-2.1\\1177ed6a8c6e5c5671b0e6414eaa7e3e\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },

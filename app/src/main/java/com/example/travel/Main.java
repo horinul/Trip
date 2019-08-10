@@ -46,7 +46,7 @@ public class Main extends AppCompatActivity {
         mfragments.add(new FR1());
         mfragments.add(new FR2());
         mfragments.add(new FR3());
-        setFragmentPosition(1);
+        setFragmentPosition(0);
     }
 
     private void initBottom(){
@@ -70,6 +70,8 @@ public class Main extends AppCompatActivity {
             }
         });
     }
+
+
     //remove移除不显示的界面，add加上要显示的界面
     private void setFragmentPosition(int position){//切换
         FragmentTransaction ft= getSupportFragmentManager().beginTransaction();//获得事务管理类的实例

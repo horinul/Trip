@@ -24,7 +24,7 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int sun = 0x7f080107;
+        public static final int sun = 0x7f080106;
     }
     public static final class styleable {
         private styleable() {}

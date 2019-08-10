@@ -1300,7 +1300,6 @@ id dimensions
 id direct
 id disableHome
 id down
-id editText
 id editText_1
 id edit_query
 id edittext
@@ -1337,7 +1336,6 @@ id icon_group
 id icon_iamge
 id ifRoom
 id image
-id imageView
 id imageView10
 id imageView11
 id imageView12
@@ -1370,6 +1368,7 @@ id linearLayout3
 id linearLayout4
 id linearLayout5
 id linearLayout6
+id linearLayout7
 id listMode
 id list_item
 id marquee
@@ -1497,6 +1496,7 @@ id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id textview20
 id time
 id title
 id titleDividerNoCustom
@@ -1523,6 +1523,7 @@ id view5
 id view6
 id view_offset_helper
 id visible
+id web1
 id withText
 id wrap
 id wrap_content
@@ -1630,6 +1631,7 @@ layout select_dialog_singlechoice_material
 layout set
 layout start
 layout support_simple_spinner_dropdown_item
+layout web
 menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round

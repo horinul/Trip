@@ -29,7 +29,8 @@
         android:roundIcon="@mipmap/ic_tour"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
         <activity android:name="com.example.travel.Comment_Package.CommentAcitvity" />
         <activity android:name="com.example.travel.CustomCamera" />
 
@@ -65,6 +66,11 @@
         <activity android:name="com.example.travel.AllPlace" />
         <activity android:name="com.example.travel.History" />
         <activity android:name="com.example.travel.Main" />
+        <activity android:name="com.example.travel.EatWeb" />
+        <activity android:name="com.example.travel.WalkWeb" />
+        <activity android:name="com.example.travel.SportWeb" />
+        <activity android:name="com.example.travel.ScienceWeb" />
+        <activity android:name="com.example.travel.StudyWeb" />
     </application>
 
 </manifest>

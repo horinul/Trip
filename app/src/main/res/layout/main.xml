@@ -20,16 +20,15 @@
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom"
-        android:layout_width="410dp"
-        android:layout_height="83dp"
+        android:layout_width="417dp"
+        android:layout_height="84dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="8dp"
         android:background="#48D1CC"
         app:itemIconTint="@drawable/change"
         app:itemTextColor="@drawable/change"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/toolbar">
 
