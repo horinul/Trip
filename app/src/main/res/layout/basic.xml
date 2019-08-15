@@ -6,27 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/view6"
-        android:layout_width="417dp"
-        android:layout_height="105dp"
-        android:background="#48D1CC"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </View>
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="656dp"
-        android:background="#48D1CC"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </View>
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="133dp"
@@ -76,15 +55,12 @@
         android:id="@+id/imageView5"
         android:layout_width="37dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/foot"
-        app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -176,12 +152,11 @@
         android:id="@+id/button4"
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/set"
-        app:layout_constraintEnd_toEndOf="@+id/view6"
-        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 

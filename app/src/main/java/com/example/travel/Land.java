@@ -2,13 +2,16 @@ package com.example.travel;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,15 +41,14 @@ public class Land extends AppCompatActivity {
                 } else Toast.makeText(Land.this, "您的账号或密码有误，请重新输入", Toast.LENGTH_SHORT).show();
             }
         });
-        TextView textView1=(TextView) findViewById(R.id.text1);
-        textView1.setOnClickListener(new View.OnClickListener() {
+
+        ImageView imageView=(ImageView) findViewById(R.id.false_button);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent(Land.this,register.class);
-                startActivity(intent1);
+                finish();
             }
         });
-
       /* psinput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

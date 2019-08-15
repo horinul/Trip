@@ -63,6 +63,8 @@
         <activity android:name=".SportWeb"/>
         <activity android:name=".ScienceWeb"/>
         <activity android:name=".StudyWeb"/>
+        <activity android:name=".Welcome"/>
+        <activity android:name=".Open"/>
     </application>
 
 </manifest>

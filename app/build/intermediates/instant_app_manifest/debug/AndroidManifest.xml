@@ -72,6 +72,8 @@
         <activity android:name="com.example.travel.SportWeb" />
         <activity android:name="com.example.travel.ScienceWeb" />
         <activity android:name="com.example.travel.StudyWeb" />
+        <activity android:name="com.example.travel.Welcome" />
+        <activity android:name="com.example.travel.Open" />
     </application>
 
 </manifest>

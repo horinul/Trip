@@ -16,7 +16,7 @@ public class start extends Activity {
         public void handleMessage(Message msg){
             if(msg.what!=0){}
             else{
-                Intent intent=new Intent(start.this, Land.class);
+                Intent intent=new Intent(start.this, Open.class);
                 startActivity(intent);
                 finish();
             }

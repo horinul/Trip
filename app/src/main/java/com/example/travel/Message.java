@@ -16,7 +16,6 @@ public class Message extends AppCompatActivity {
     public void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
         setContentView(R.layout.message);
-        setStatusBarUpperAPI21();
         ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
         ImageView imageView=(ImageView) findViewById(R.id.imageView3);
@@ -26,13 +25,14 @@ public class Message extends AppCompatActivity {
                 finish();
             }
         });
+        if(Build.VERSION.SDK_INT>=21){
+            View decorView=getWindow().getDecorView();
+            int option=View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN| View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+            decorView.setSystemUiVisibility(option);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
+        ActionBar actionbar=getSupportActionBar();
+        actionbar.hide();
     }
-    private void setStatusBarUpperAPI21(){
-        Window window = getWindow();
-        //取消设置悬浮透明状态栏,ContentView便不会进入状态栏的下方了
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-        //设置状态栏颜色
-        window.setStatusBarColor(getResources().getColor(R.color.view));
-    }
 }

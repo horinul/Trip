@@ -18,13 +18,13 @@ public final class R {
         private drawable() {}
 
         public static final int buildings = 0x7f070061;
-        public static final int sky = 0x7f0700b1;
-        public static final int sun = 0x7f0700b3;
+        public static final int sky = 0x7f0700b8;
+        public static final int sun = 0x7f0700ba;
     }
     public static final class id {
         private id() {}
 
-        public static final int sun = 0x7f080106;
+        public static final int sun = 0x7f080107;
     }
     public static final class styleable {
         private styleable() {}
