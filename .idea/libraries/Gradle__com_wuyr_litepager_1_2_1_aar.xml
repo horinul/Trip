@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wuyr:litepager:1.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6041e80079cce111a3f9e6154e201dd1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6041e80079cce111a3f9e6154e201dd1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6041e80079cce111a3f9e6154e201dd1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wuyr/litepager/1.2.1/f4502bb613eba52fe0650db62c7f8195d85bd0c5/litepager-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
